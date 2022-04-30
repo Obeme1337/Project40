@@ -1,7 +1,7 @@
-#include "CarCenter.h"
+#include "Car.h"
 
 
-CarCenter::CarCenter() {
+Car::Car() {
 	brand = "no brand";
 	model = "no model";
 	price = 10000;
@@ -9,7 +9,7 @@ CarCenter::CarCenter() {
 	release = 2010;
 }
 
-CarCenter::CarCenter(string brand, string model, double price, string colour, int release) {
+Car::Car(string brand, string model, double price, string colour, int release) {
 	this->brand = brand;
 	this->model = model;
 	this->price = price;
@@ -18,29 +18,29 @@ CarCenter::CarCenter(string brand, string model, double price, string colour, in
 }
 
 
-string CarCenter::getBrand() {
+string Car::getBrand() {
 	return brand;
 }
 
-void CarCenter::setBrand(string brand) {
+void Car::setBrand(string brand) {
 	this->brand = brand;
 }
 
-string CarCenter::getModel() {
+string Car::getModel() {
 	return model;
 }
 
-void CarCenter::setModel(string model) {
+void Car::setModel(string model) {
 	this->model = model;
 
 }
 
 
-double CarCenter::getPrice() {
+double Car::getPrice() {
 	return price;
 }
 
-void CarCenter::setPrice(double price) {
+void Car::setPrice(double price) {
 	if (price >= MIN_PRICE && price <= MAX_PRICE) {
 		this->price = price;
 
@@ -48,27 +48,27 @@ void CarCenter::setPrice(double price) {
 }
 
 
-string CarCenter::getColour() {
+string Car::getColour() {
 	return colour;
 }
 
-void CarCenter::setColour(string colour) {
+void Car::setColour(string colour) {
 	this->colour = colour;
 
 }
 
-int CarCenter::getRelease() {
+int Car::getRelease() {
 	return release;
 }
 
-void CarCenter::setRelease(int release) {
+void Car::setRelease(int release) {
 	if (release >= MIN_YEAR_RELEASE && release <= MAX_YEAR_RELEASE) {
 		this->release = release;
 	}
 }
 
 
-string CarCenter::getInfo() {
+string Car::getInfo() {
 	return brand + ": model = " + model
 		+ ": price = " + to_string(price)
 		+ "; colour = " + colour

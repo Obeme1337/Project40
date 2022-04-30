@@ -1,6 +1,6 @@
 #pragma once
 #include "Header.h"
-class CarCenter
+class Car
 {
 private:
 	string brand;
@@ -19,11 +19,11 @@ public:
 
 
 
-	CarCenter();
+	Car();
 
-	CarCenter(string brand, string model, double price, string colour, int release);
+	Car(string brand, string model, double price, string colour, int release);
 
-	~CarCenter();
+	~Car();
 
 	string getBrand();
 
