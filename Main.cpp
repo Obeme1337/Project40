@@ -1,13 +1,20 @@
 #include "Car.h"
 #include "CarCenter.h"
 
+void changePrice(Car& cr) {
+	srand(time(0));
+	int price = rand() % 1000000;
+	cr.setPrice(price);
+}
+
+
 int main() {
 
 	/*Car car1("Ferrari", "V8", 100000, "red", 2020);
 
 	cout << car1.getInfo() << endl;*/
 
-	CarCenter CarCenter1("Sausage");
+	/*CarCenter CarCenter1("Sausage");
 	CarCenter CarCenter2("Banana");
 
 
@@ -29,7 +36,12 @@ int main() {
 	CarCenter2.add(c6);
 
 	cout << CarCenter1.getInfo() << endl;
-	cout << CarCenter2.getInfo() << endl;
+	cout << CarCenter2.getInfo() << endl;*/
+
+	Car car1("Ferrari", "V8", 100000, "red", 2020);
+
+	changePrice(car1);
+	cout << car1.getInfo() << endl;
 
 	return 0;
 }

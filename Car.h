@@ -2,6 +2,8 @@
 #include "Header.h"
 class Car
 {
+	friend void changePrice(Car& cr);
+
 private:
 	string brand;
 	string model;
