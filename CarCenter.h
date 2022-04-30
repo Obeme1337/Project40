@@ -4,6 +4,7 @@ class CarCenter
 {
 private:
 	string brand;
+	string model;
 	double price;
 	string colour;
 	int release;
@@ -20,13 +21,18 @@ public:
 
 	CarCenter();
 
-	CarCenter(string brand, double price, string colour, int release);
+	CarCenter(string brand, string model, double price, string colour, int release);
 
 	~CarCenter();
 
 	string getBrand();
 
 	void setBrand(string brand);
+
+	string getModel();
+
+	void setModel(string model);
+
 
 	double getPrice();
 
