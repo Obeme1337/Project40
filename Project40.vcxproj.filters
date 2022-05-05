@@ -24,6 +24,9 @@
     <ClCompile Include="CarCenter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CenterDirector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h">
@@ -33,6 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CarCenter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CenterDirector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
