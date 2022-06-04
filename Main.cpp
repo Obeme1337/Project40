@@ -1,5 +1,6 @@
 #include "Car.h"
 #include "CarCenter.h"
+#include "CenterDirector.h" 
 
 void changePrice(Car& cr) {
 	srand(time(0));
@@ -38,10 +39,10 @@ int main() {
 	cout << CarCenter1.getInfo() << endl;
 	cout << CarCenter2.getInfo() << endl;*/
 
-	Car car1("Ferrari", "V8", 100000, "red", 2020);
+	/*Car car1("Ferrari", "V8", 100000, "red", 2020);
 
 	changePrice(car1);
-	cout << car1.getInfo() << endl;
+	cout << car1.getInfo() << endl;*/
 
 	return 0;
 }

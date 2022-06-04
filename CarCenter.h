@@ -3,7 +3,7 @@
 
 class CarCenter
 {
-	friend class CarCenter;
+	friend class CenterDirector;
 
 private:
 	int size;
