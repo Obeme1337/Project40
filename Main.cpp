@@ -1,6 +1,7 @@
 #include "Car.h"
 #include "CarCenter.h"
 #include "CenterDirector.h" 
+#include "SuperCar.h"
 
 void changePrice(Car& cr) {
 	srand(time(0));
