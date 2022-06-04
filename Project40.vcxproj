@@ -143,12 +143,14 @@
     <ClCompile Include="CarCenter.cpp" />
     <ClCompile Include="CenterDirector.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SuperCar.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
     <ClInclude Include="CarCenter.h" />
     <ClInclude Include="CenterDirector.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="SuperCar.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
