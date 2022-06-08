@@ -16,7 +16,7 @@ public:
 	CarCenter(string name, Car* list, int size);
 	~CarCenter();
 
-	void add(Car student);
+	void add(Car car);
 
 	Car get(int index);
 	int getSize();

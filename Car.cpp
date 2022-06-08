@@ -17,6 +17,9 @@ Car::Car(string brand, string model, double price, string colour, int release) {
 	this->release = release;
 }
 
+Car::~Car() {
+
+}
 
 string Car::getBrand() {
 	return brand;
